@@ -1,0 +1,126 @@
+
+.containar {
+    display: grid;
+    width: 320px;
+    grid-template-columns: 1fr 70px;
+    grid-template-rows: 120px 120px 100px;
+    grid-template-areas: 
+        "aaa ab1"
+        "bbb ab2"
+        "ccc ab3"
+    ;
+    border: 5px solid #aaa;
+}
+
+.aaa {
+    grid-area: aaa;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+.aaa span:first-child, .bbb span:first-child, .ccc span:first-child {
+    display: block;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #385f05;
+}
+.aaa span:nth-last-child(), .bbb span:nth-last-child() {
+    display: flex;
+    align-items: center;
+}
+.aaa p, .bbb p, .ccc p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 3px;
+    border: 1px solid #aaa;
+}
+.aaa label, .bbb label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.aaa label input, .bbb label input {
+    scale: 1.2;
+}
+.ab1 {
+    grid-area: ab1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-left: none;
+}
+.bbb {
+    grid-area: bbb;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-top: none;
+}
+.ab2 {
+    grid-area: ab2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-top: none;
+}
+.ccc {
+    grid-area: ccc;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-top: none;
+}
+.ab3 {
+    grid-area: ab3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-top: none;
+}
+.con02 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px solid #aaa;
+    margin-top: 20px;
+    height: 210px;
+}
+.con2AAA, .con2BBB, .con2CCC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.con2AAA {
+    margin-top: 20px;
+}
+.con2AAA button, .con2BBB button, .con2CCC button {
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    border: 4px solid #aaa;
+    border-radius: 5px;
+    color: #db0202;
+    font-weight: bold;
+    background: rgb(221, 221, 119);
+    cursor: pointer;
+}
+.con2CCC button {
+    width: 100px;
+}
+.con2AAA button + button, .con2BBB button + button, .con2CCC button + button {
+    margin-left: 10px;
+}
+.hen {
+    color: #db0202;
+    font-weight: bold;
+    cursor: pointer;
+}
